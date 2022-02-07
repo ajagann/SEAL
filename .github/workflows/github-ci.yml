@@ -1,3 +1,7 @@
 # Initializing workflow
 
 name: Build and Test
+on:
+  # Schedule run every week at 8AM UTC (midnight PST)
+  schedule:
+    - cron: '0 8 * * SUN'
